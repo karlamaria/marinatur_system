@@ -1,0 +1,64 @@
+// Place all the styles related to the Jobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.simple-calendar{  
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    font-family: "Lucida Grande",arial,helvetica,sans-serif;
+    font-size: 10px;
+    padding: 6px;
+    border: 1px solid #999;
+  }
+
+  th {
+    background: #DDD;
+    color: #666;
+    text-align: center;
+    width: 14.2857142857143%;
+  }
+
+  .calendar-heading {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #999;
+    background: #DDD;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .day {
+    background: #FFF;
+    color: #777;
+    height: 80px;
+    vertical-align: top;
+    font-size: 16px;
+  }
+
+  .today {
+    background-color: #f0f8ff;
+  }
+
+  .prev-month {
+    color: #DDD;
+  }
+  .next-month { 
+    color: #DDD;
+  }
+
+  .current-month {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+  }
+
+  .has-events {
+    background-color: #faebd7;
+  }
+}

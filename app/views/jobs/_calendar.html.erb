@@ -1,0 +1,8 @@
+<%= month_calendar(attribute: :start_date, events: @jobs) do |date, jobs| %>
+  <%= date.day %>
+    <% jobs.each do |job| %>
+    <div>
+      <%= link_to job.vehicle, job %>
+    </div>
+  <% end %>
+<% end %>

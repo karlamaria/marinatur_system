@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle: MyString
+  start_date: 2018-01-30 23:56:09
+  end_date: 2018-01-30 23:56:09
+  customer: MyString
+  status: MyString
+  price: 9.99
+  responsible: MyString
+
+two:
+  vehicle: MyString
+  start_date: 2018-01-30 23:56:09
+  end_date: 2018-01-30 23:56:09
+  customer: MyString
+  status: MyString
+  price: 9.99
+  responsible: MyString
