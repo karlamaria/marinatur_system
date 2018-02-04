@@ -1,4 +1,4 @@
-<%= month_calendar(attribute: :start_date, events: @jobs) do |date, jobs| %>
+<%= month_calendar(attribute: :start_date, end_attribute: :end_date, events: @jobs) do |date, jobs| %>
   <%= date.day %>
     <% jobs.each do |job| %>
     <div>

@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.text_field :status, id: :job_status %>
+    <%= form.select :status, options_for_select([t('status.waiting_confirmation'), t('status.confirmed'), t('status.canceled')]) %>
   </div>
 
   <div class="field">
