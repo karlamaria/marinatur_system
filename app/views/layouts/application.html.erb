@@ -11,33 +11,31 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">MarinaTurSystem</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <%= link_to t('home'), calendar_path, :class => 'nav-link'  %>
-        </li>
-        <li class="nav-item">
-          <%= link_to t('jobs'), jobs_path, :class => 'nav-link'  %>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><%= t('vehicles') %></a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        <% if user_signed_in? %>
-          <%= t('login_as') %><strong><%= current_user.email %></strong>.
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <% else %>
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-        <% end %>
-      </span>
-    </div>
-  </nav>
+    <% if user_signed_in? %>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MarinaTurSystem</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <%= link_to t('home'), calendar_path, :class => 'nav-link'  %>
+            </li>
+            <li class="nav-item">
+              <%= link_to t('jobs'), jobs_path, :class => 'nav-link'  %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><%= t('vehicles') %></a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <%= t('login_as') %><strong><%= current_user.email %></strong>.
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          </span>
+        </div>
+      </nav>
+    <% end %>
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
