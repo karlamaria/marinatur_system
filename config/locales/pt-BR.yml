@@ -1,4 +1,8 @@
 pt-BR:
+  home: Home
+  jobs: Reservas
+  login_as: 'Logado como: '
+  vehicles: Veículos
   status:
     waiting_confirmation: Aguardando Confirmação
     confirmed: Confirmado

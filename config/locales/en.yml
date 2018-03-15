@@ -30,6 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  home: Home
+  jobs: Jobs
+  logged_as: 'Logado como: '
+  vehicles: Vehicles
   status:
     waiting_confirmation: Waiting Confirmation
     confirmed: Confirmed
